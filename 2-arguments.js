@@ -4,7 +4,7 @@ if (argscount === 0) {
     console.log ("No argument");
 
  } else if (argscount === 1) {
-    console.log ("argument found");
+    console.log ("1 argument");
 } else {
-    console.log("arguments found");
+    console.log( `${argscount} arguments`);
 }
