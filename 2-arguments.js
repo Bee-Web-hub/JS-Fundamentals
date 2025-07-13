@@ -1,10 +1,8 @@
-const argscount = Process.argv.length - 2;
+const argscount = Process.argv.slice (2);
+const result = argscount[0];
 
-if (argscount === 0) {
+if (result === undefined) {
     console.log ("No argument");
-
- } else if (argscount === 1) {
-    console.log ("1 argument");
 } else {
-    console.log( `${argscount} arguments`);
+    console.log(result);
 }
